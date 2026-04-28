@@ -53,7 +53,7 @@ export function HeroSection() {
                                 <span>{contactInfo.location}</span>
                             </div>
                             <span className="hidden sm:inline text-border">·</span>
-                            <span className="hidden sm:inline">Carnegie Mellon University Africa</span>
+                            <span className="hidden sm:inline">SaiGon University</span>
                         </div>
                     </div>
 

@@ -13,7 +13,7 @@ interface BrandLogoProps {
 export function BrandLogo({ className }: BrandLogoProps) {
     return (
         <span
-            aria-label="brhane.giday"
+            aria-label="tnguywn"
             className={cn(
                 "inline-flex items-center gap-2 select-none leading-none",
                 className

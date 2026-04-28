@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { contactInfo, navSections, personalInfo } from "@/lib/data";
 import { ExternalLink, Github, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 import { BrandLogo } from "@/components/common/brand-logo";
+import { useEffect, useState } from "react";
 
 const socialIcons = {
     GitHub: Github,
@@ -12,7 +13,11 @@ const socialIcons = {
 };
 
 export function Footer() {
-    const currentYear = new Date().getFullYear();
+    const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear());
+
+    useEffect(() => {
+        setCurrentYear(new Date().getFullYear());
+    }, []);
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
@@ -79,7 +84,7 @@ export function Footer() {
                                     <ExternalLink className="w-3 h-3" />
                                 </a>
                                 <a
-                                    href="https://github.com/brhanegiday"
+                                    href="https://github.com/nguyenfan20"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1.5"

@@ -60,7 +60,7 @@
   --popover-foreground: oklch(0.20 0.015 250);
   
   /* Primary - Deep Teal (Professional Tech) */
-  --primary: oklch(0.45 0.12 200); /* Rich teal-cyan */
+  --primary: #09637E; /* Blue-gray professional */
   --primary-foreground: oklch(0.99 0 0);
   
   /* Secondary - Warm Terracotta Accent */

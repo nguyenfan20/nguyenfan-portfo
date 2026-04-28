@@ -118,7 +118,7 @@ export default function ProjectsSection() {
                 {/* GitHub CTA */}
                 <div className="text-center">
                     <Button variant="outline" className="gap-2" asChild>
-                        <a href="https://github.com/brhanegiday" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/nguyenfan20" target="_blank" rel="noopener noreferrer">
                             <Github className="w-4 h-4" />
                             More on GitHub
                         </a>

@@ -2,35 +2,29 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { achievements, education, personalInfo, skillsByCategory } from "@/lib/data";
+import { education, personalInfo, skillsByCategory } from "@/lib/data";
 import { SkillCategory } from "@/types";
 import {
     Award,
     Brain,
-    Cloud,
     Code2,
     Database,
     Download,
     ExternalLink,
     GraduationCap,
-    Palette,
     Settings,
     Target,
     User,
-    Users
 } from "lucide-react";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const categoryIcons: Record<SkillCategory, any> = {
-    Frontend: Code2,
-    Backend: Database,
+    "Programming Languages": Code2,
+    "Frameworks & Libraries": Award,
     "AI/ML": Brain,
     Database: Database,
-    "Cloud/DevOps": Cloud,
-    Leadership: Users,
-    Tools: Settings,
-    Design: Palette,
-    Core: Target,
+    "Developer Tools": Settings,
+    Research: Target,
 };
 
 export function AboutSection() {
@@ -51,10 +45,10 @@ export function AboutSection() {
                         About Me
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                        Engineering at Scale
+                        AI Engineer
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                        Staff-level engineer specializing in AI-powered healthcare solutions and system architecture
+                        Passionate about building intelligent systems using Large Language Models, semantic search, and retrieval-augmented generation pipelines
                     </p>
                 </div>
 
@@ -63,18 +57,20 @@ export function AboutSection() {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <p className="text-muted-foreground leading-relaxed">
-                                <span className="text-foreground font-semibold">Staff Software Engineer</span> with
-                                proven expertise architecting scalable systems and leading cross-functional teams that
-                                deliver measurable impact.
+                                <span className="text-foreground font-semibold">AI Engineer</span> specializing in
+                                Large Language Models and Retrieval-Augmented Generation (RAG) pipelines.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Currently leading AI research initiatives at Carnegie Mellon University&apos;s Upanzi Network,
-                                where I architect LLM-powered healthcare platforms serving 1,000+ researchers globally.
-                                My work achieves 40% reduction in biomarker assay variability.
+                                I recently developed <span className="text-foreground font-medium">SGU-Agent</span>, a personalized
+                                academic recommendation system combining semantic search with collaborative filtering, and
+                                <span className="text-foreground font-medium"> Traffic SGU</span>, a Vietnamese traffic law Q&A
+                                system using advanced RAG pipelines. Both projects demonstrate my expertise in building domain-specific
+                                AI applications.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                I&lsquo;ve built and mentored engineering teams across three countries, consistently
-                                delivering systems with 99.9% uptime while maintaining rapid development velocity.
+                                I&apos;m passionate about applying AI to solve real-world problems, particularly in education,
+                                information retrieval, and semantic understanding. My focus areas include LLM fine-tuning,
+                                embeddings optimization, and building robust AI systems that deliver accurate, contextual results.
                             </p>
                         </div>
 
@@ -126,7 +122,7 @@ export function AboutSection() {
                             </div>
                         </div>
 
-                        {/* Achievements */}
+                        {/* Achievements
                         <div className="space-y-3">
                             <h3 className="text-lg font-semibold flex items-center gap-2">
                                 <Award className="w-5 h-5 text-primary" />
@@ -150,7 +146,7 @@ export function AboutSection() {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    */}
 
                     {/* Skills Section */}
                     <div className="space-y-4">
@@ -191,6 +187,7 @@ export function AboutSection() {
                             );
                         })}
                     </div>
+                </div>
                 </div>
             </div>
         </section>

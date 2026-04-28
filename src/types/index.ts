@@ -18,9 +18,9 @@ export interface Project {
 
 export type ProjectCategory =
     | "AI/ML Application"
-    | "Full-Stack Development"
-    | "Team Leadership"
-    | "Frontend Engineering";
+    // | "Full-Stack Development"
+    // | "Team Leadership"
+    // | "Frontend Engineering";
 
 export interface Experience {
     id: string;
@@ -58,15 +58,12 @@ export interface Skill {
 }
 
 export type SkillCategory =
-    | "Frontend"
-    | "Backend"
+    | "Programming Languages"
+    | "Frameworks & Libraries"
     | "AI/ML"
     | "Database"
-    | "Cloud/DevOps"
-    | "Design"
-    | "Tools"
-    | "Core"
-    | "Leadership";
+    | "Developer Tools"
+    | "Research";
 
 export interface SocialLink {
     platform: string;
