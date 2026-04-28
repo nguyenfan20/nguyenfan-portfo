@@ -38,7 +38,7 @@ export function Footer() {
                             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
                                 Transforming ideas into AI-powered applications.
                                 Experienced in semantic search, LLM systems, and end-to-end ML projects.
-                                <br />Let's collaborate and innovate together.
+                                <br />Let&apos;s collaborate and innovate together.
                             </p>
                             <div className="flex items-center space-x-1.5 text-sm text-muted-foreground">
                                 <MapPin className="w-3.5 h-3.5" />

@@ -1,4 +1,4 @@
-import { Achievement, ContactInfo, Education, Experience, PersonalInfo, Project, Skill } from "@/types";
+import { ContactInfo, Education, Experience, PersonalInfo, Project, Skill } from "@/types";
 
 export const personalInfo: PersonalInfo = {
     name: "Phan Tai Nguyen",
