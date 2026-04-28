@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { seoConfig } from "@/lib/data";
-// @ts-expect-error -- Next.js supports global CSS side-effect imports in app/layout.tsx
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
