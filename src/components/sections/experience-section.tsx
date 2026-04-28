@@ -16,10 +16,10 @@ export function ExperienceSection() {
                         Experience
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                        Professional Journey
+                        Amateur Journey
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                        Staff-level engineering experience leading teams and architecting scalable systems
+                        Building intelligent AI solutions. Specialized in semantic search, RAG systems, and LLM-based applications with real-world impact.
                     </p>
                 </div>
 

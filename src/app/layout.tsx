@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { seoConfig } from "@/lib/data";
+// @ts-expect-error -- Next.js supports global CSS side-effect imports in app/layout.tsx
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -57,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
             </head>
-            <body className={cn("min-h-screen bg-background font-sans antialiased scroll-smooth", inter.variable)}>
+            <body className={cn("min-h-screen bg-background font-sans antialiased scroll-smooth", inter.variable)} suppressHydrationWarning>
                 <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
                     {children}
                 </ThemeProvider>

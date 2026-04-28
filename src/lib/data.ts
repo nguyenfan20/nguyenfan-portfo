@@ -9,7 +9,7 @@ export const personalInfo: PersonalInfo = {
         Large Language Models at the Upanzi Network, specializing in LLM-powered policy and healthcare data analysis. 
         Passionate about architecting scalable applications, building CI/CD pipelines, and applying AI to solve 
         complex problems in healthcare and policy domains.`,
-    profileImage: "/images/brhane-giday.jpg",
+    profileImage: "/images/nguyen-fan.jpg",
     resumeUrl: "/documents/AIEngineerIntern__PhanTaiNguyen_EN_Resumé.pdf",
     cvUrl: "/documents/AIEngineerIntern__PhanTaiNguyen_EN_Resumé.pdf",
 };

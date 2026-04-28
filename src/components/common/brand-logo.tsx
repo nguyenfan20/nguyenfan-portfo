@@ -24,7 +24,7 @@ export function BrandLogo({ className }: BrandLogoProps) {
 
             {/* First name — light weight, wide tracking */}
             <span className="text-[15px] font-light tracking-[0.07em]">
-                brhane
+                nguyen
             </span>
 
             {/* Accent diamond — subtle pulse */}
@@ -34,7 +34,7 @@ export function BrandLogo({ className }: BrandLogoProps) {
 
             {/* Last name — semibold, tighter tracking */}
             <span className="text-[15px] font-semibold tracking-[0.03em]">
-                giday
+                fan
             </span>
         </span>
     );

@@ -36,8 +36,9 @@ export function Footer() {
                         <div className="lg:col-span-4 space-y-3">
                             <BrandLogo className="text-primary" />
                             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-                                From full-stack apps to DevOps pipelines and applied AI research, I bridge design, code,
-                                and data to deliver technology that matters.
+                                Transforming ideas into AI-powered applications.
+                                Experienced in semantic search, LLM systems, and end-to-end ML projects.
+                                <br />Let's collaborate and innovate together.
                             </p>
                             <div className="flex items-center space-x-1.5 text-sm text-muted-foreground">
                                 <MapPin className="w-3.5 h-3.5" />

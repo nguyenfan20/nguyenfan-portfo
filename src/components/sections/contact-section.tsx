@@ -133,8 +133,9 @@ export function ContactSection() {
                                         Available for Opportunities
                                     </h4>
                                     <p className="text-muted-foreground text-sm leading-relaxed">
-                                        Open to staff-level engineering roles, leadership opportunities, and consulting
-                                        projects.
+                                        AI Engineer intern position | RAG & LLM specialist
+                                        <br />
+                                        Open to: On-site (HCMC) • Hybrid • Remote
                                     </p>
                                 </div>
                             </div>

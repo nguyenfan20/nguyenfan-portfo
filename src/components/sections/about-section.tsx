@@ -74,27 +74,6 @@ export function AboutSection() {
                             </p>
                         </div>
 
-                        {/* Action Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-3">
-                            <Button
-                                onClick={() => scrollToSection("projects")}
-                                className="gap-2"
-                            >
-                                <ExternalLink className="w-4 h-4" />
-                                View My Projects
-                            </Button>
-                            <Button
-                                variant="outline"
-                                className="gap-2"
-                                asChild
-                            >
-                                <a href={personalInfo.cvUrl} target="_blank" rel="noopener noreferrer">
-                                    <Download className="w-4 h-4" />
-                                    Download CV
-                                </a>
-                            </Button>
-                        </div>
-
                         {/* Education */}
                         <div className="space-y-3">
                             <h3 className="text-lg font-semibold flex items-center gap-2">
@@ -122,6 +101,69 @@ export function AboutSection() {
                             </div>
                         </div>
 
+                        {/* Action Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-3">
+                            <Button
+                                onClick={() => scrollToSection("projects")}
+                                className="gap-2"
+                            >
+                                <ExternalLink className="w-4 h-4" />
+                                View My Projects
+                            </Button>
+                            <Button
+                                variant="outline"
+                                className="gap-2"
+                                asChild
+                            >
+                                <a href={personalInfo.cvUrl} target="_blank" rel="noopener noreferrer">
+                                    <Download className="w-4 h-4" />
+                                    Download CV
+                                </a>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        {/* Skills Section */}
+                        <div className="space-y-4">
+                            <div className="mb-2">
+                                <h3 className="text-lg font-semibold mb-1">Technical Expertise</h3>
+                                <p className="text-muted-foreground text-sm">
+                                    Technologies and tools I work with to build solutions.
+                                </p>
+                            </div>
+
+                            {Object.entries(skillsByCategory).map(([category, skills]) => {
+                                const IconComponent = categoryIcons[category as SkillCategory] || Code2;
+                                return (
+                                    <div key={category} className="p-5 rounded-xl border bg-card hover:shadow-md transition-shadow">
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+                                                <IconComponent className="w-4 h-4 text-primary" />
+                                            </div>
+                                            <h4 className="font-semibold text-sm">{category}</h4>
+                                        </div>
+                                        <div className="flex flex-wrap gap-1.5">
+                                            {skills.map((skill) => (
+                                                <Badge
+                                                    key={skill.name}
+                                                    variant={skill.proficiency === "expert" ? "default" : "secondary"}
+                                                    className="text-xs"
+                                                >
+                                                    {skill.name}
+                                                    {skill.yearsOfExperience && (
+                                                        <span className="ml-1 opacity-70">
+                                                            {skill.yearsOfExperience}y
+                                                        </span>
+                                                    )}
+                                                </Badge>
+                                            ))}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
                         {/* Achievements
                         <div className="space-y-3">
                             <h3 className="text-lg font-semibold flex items-center gap-2">
@@ -147,47 +189,7 @@ export function AboutSection() {
                             </div>
                         </div>
                     */}
-
-                    {/* Skills Section */}
-                    <div className="space-y-4">
-                        <div className="mb-2">
-                            <h3 className="text-lg font-semibold mb-1">Technical Expertise</h3>
-                            <p className="text-muted-foreground text-sm">
-                                Technologies and tools I work with to build solutions.
-                            </p>
-                        </div>
-
-                        {Object.entries(skillsByCategory).map(([category, skills]) => {
-                            const IconComponent = categoryIcons[category as SkillCategory] || Code2;
-                            return (
-                                <div key={category} className="p-5 rounded-xl border bg-card hover:shadow-md transition-shadow">
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                                            <IconComponent className="w-4 h-4 text-primary" />
-                                        </div>
-                                        <h4 className="font-semibold text-sm">{category}</h4>
-                                    </div>
-                                    <div className="flex flex-wrap gap-1.5">
-                                        {skills.map((skill) => (
-                                            <Badge
-                                                key={skill.name}
-                                                variant={skill.proficiency === "expert" ? "default" : "secondary"}
-                                                className="text-xs"
-                                            >
-                                                {skill.name}
-                                                {skill.yearsOfExperience && (
-                                                    <span className="ml-1 opacity-70">
-                                                        {skill.yearsOfExperience}y
-                                                    </span>
-                                                )}
-                                            </Badge>
-                                        ))}
-                                    </div>
-                                </div>
-                            );
-                        })}
                     </div>
-                </div>
                 </div>
             </div>
         </section>
